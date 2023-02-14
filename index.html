@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Score Counter</h2>
+    </header>
+
+    <main>
+        <div class="head">
+            <h3 class="display">Home</h3>
+            <h3 class="display">Away</h3>
+        </div>
+
+        <div class="container">
+
+            <div class="score-box">
+                <h1 class="score" id="home-scr">0</h1>
+            </div>
+
+
+            <div class="score-box">
+                <h1 class="score" id="away-scr">0</h1>
+            </div>
+
+
+        </div>
+
+        <div class="buttons-display">
+            <div class="buttons">
+                <button id="home-scr1" onclick="plusOneHome()">+1</button>
+                <button id="home-scr2" onclick="plusTwoHome()">+2</button>
+                <button id="home-scr3" onclick="plusThreeHome()">+3</button>
+            </div>
+
+            <div class="buttons">
+                <button id="away-scr1" onclick="plusOneAway()">+1</button>
+                <button id="away-scr2" onclick="plusTwoAway()">+2</button>
+                <button id="away-scr3" onclick="plusThreeAway()">+3</button>
+            </div>
+        </div>
+
+        <div class="newGame">
+            <button id="reset" onclick="reset()">NEW GAME</button>
+        </div>
+
+    </main>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
